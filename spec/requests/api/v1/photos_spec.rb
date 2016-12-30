@@ -11,7 +11,7 @@ RSpec.describe "get to /photos" do
     expect(response).to be_success
     expect(photo).to be_instance_of(Array)
     expect(photo.count).to eq(2)
-    expect(photo.first["id"]).to eq(Photo.first.id)
-    expect(photo.last["id"]).to eq(Photo.last.id)
+    expect(photo.first["id"]).to eq(Photo.last.id)
+    expect(photo.last["id"]).to eq(Photo.first.id)
   end
 end
