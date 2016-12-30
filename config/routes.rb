@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :photos, only: [:index]
+      get 'photos/first-photo-of-the-month', to: 'months#index'
     end
   end
 end
