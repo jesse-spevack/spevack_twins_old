@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m4 l8 offset-m4 offset-l2">
+      <div class="card photo-of-the-day">
+        <div class="card-image">
+          <%= image_tag @photo_of_the_day.photo %>
+          <span class="card-title"><%= @photo_of_the_day.title %></span>
+        </div>
+        <div class="card-content">
+          <p><%= @photo_of_the_day.caption %></p>
+          <p><%= @photo_of_the_day.date %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="past-photos-of-the-day">
+    </div>
+  </div>
+</div>

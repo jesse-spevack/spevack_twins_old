@@ -1,0 +1,5 @@
+<% if current_user %>
+  <li><a href="#" class="dropdown-button" data-activates='dropdown1' data-hover="true" data-beloworigin="true"><%= image_tag current_user.image, class: "circle responsive-img valign" %></a></li>
+<% else %>
+  <li><%= link_to "Sign in with Google", login_path, class: "waves-effect waves-light btn cyan lighten-3" %></li>
+<% end %>
