@@ -20,6 +20,7 @@ gem 'google-cloud'
 gem 'carrierwave'
 gem 'fog'
 gem 'mini_magick'
+gem 'materialize-sass'
 
 group :development, :test do
   gem 'byebug', platform: :mri
